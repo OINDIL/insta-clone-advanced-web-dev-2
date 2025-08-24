@@ -4,9 +4,11 @@ import PostCard from "./PostCard";
 
 function Homepage() {
   return (
-    <div className="">
-      <Stories />
-      <section>
+    <div>
+      <div>
+        <Stories />
+      </div>
+      <section className="bg-neutral-200 w-full">
         {posts.map((post, index) => (
           <div key={index}>
             <PostCard

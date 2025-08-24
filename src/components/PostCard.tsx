@@ -12,10 +12,9 @@ type Props = {
 function PostCard({ img, username, caption, likes, profile }: Props) {
   return (
     <div>
-      <Card>
+      <Card className="max-w-3xl">
         <CardHeader>
           <img src={profile} alt={username} />
-
           <p>{username}</p>
         </CardHeader>
         <CardContent>

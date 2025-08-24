@@ -9,7 +9,7 @@ type Children = {
 const Sidebar = ({ children }: Children) => {
   return (
     <div className="flex">
-      <nav className="w-52 border-r min-h-screen flex flex-col justify-between py-10 shadow-xl">
+      <nav className="border-r min-h-screen flex flex-col justify-between py-10 shadow-xl">
         <div>
           <span className="text-4xl font-semibold font-rouge px-5">
             Instagram
@@ -40,7 +40,9 @@ const Sidebar = ({ children }: Children) => {
           </div>
         </div>
       </nav>
-      <main className="px-10">{children}</main>
+      <main className="px-10">
+        {children}
+      </main>
     </div>
   );
 };
