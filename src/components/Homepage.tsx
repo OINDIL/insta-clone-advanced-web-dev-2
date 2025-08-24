@@ -4,11 +4,11 @@ import PostCard from "./PostCard";
 
 function Homepage() {
   return (
-    <div>
+    <div className="space-y-10 pb-20">
       <div>
         <Stories />
       </div>
-      <section className="bg-neutral-200 w-full">
+      <section className="flex gap-10 flex-col items-center justify-center">
         {posts.map((post, index) => (
           <div key={index}>
             <PostCard

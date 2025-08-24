@@ -1,3 +1,4 @@
+
 import Homepage from "./components/Homepage";
 import Sidebar from "./components/Sidebar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -16,13 +17,15 @@ function App() {
       path: "/search",
       element: (
         <div>
-          <Sidebar children={<div>Search component</div>} />
+          <Sidebar children={<div>Search</div>} />
         </div>
       ),
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <RouterProvider router={router} />
+  )
 }
 
 export default App;

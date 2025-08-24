@@ -2,11 +2,11 @@ import { stories } from "@/assets/data";
 
 function Stories() {
   return (
-    <div className="mt-10 flex gap-6 p-4">
+    <div className="mt-10 relative z-0 flex items-center justify-center gap-6 py-4 overflow-x-scroll">
       {stories.map((story, index) => (
         <div
           key={index}
-          className="relative flex-shrink-0 flex flex-col items-center w-24"
+          className="relative flex-shrink-0 flex flex-col items-center w-24 "
         >
           <div className="absolute top-[-2.5px] inset-y-0 translate-x-0 size-[85px] rounded-full bg-gradient-to-t from-pink-600 via-red-400 to-yellow-500 z-0" />
           <img

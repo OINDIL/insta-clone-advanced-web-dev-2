@@ -81,26 +81,7 @@ export const stories = [
     title: "Sabera",
     img: "https://placehold.co/70x70",
   },
-  {
-    title: "Sabera",
-    img: "https://placehold.co/70x70",
-  },
-  {
-    title: "Sabera",
-    img: "https://placehold.co/70x70",
-  },
-  {
-    title: "Sabera",
-    img: "https://placehold.co/70x70",
-  },
-  {
-    title: "Sabera",
-    img: "https://placehold.co/70x70",
-  },
-  {
-    title: "Sabera",
-    img: "https://placehold.co/70x70",
-  },
+  
 ];
 
 export const posts = [
@@ -114,7 +95,7 @@ export const posts = [
   },
   {
     id: 2,
-    img: "https://placehold.co/600x800",
+    img: "https://placehold.co/600x400",
     profile: "https://placehold.co/70x70",
     username: "Oindil",
     likes: 100,
@@ -122,7 +103,7 @@ export const posts = [
   },
   {
     id: 3,
-    img: "https://placehold.co/600x800",
+    img: "https://placehold.co/600x600",
     profile: "https://placehold.co/70x70",
     username: "Oindil",
     likes: 100,

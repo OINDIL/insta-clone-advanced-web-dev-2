@@ -8,8 +8,8 @@ type Children = {
 
 const Sidebar = ({ children }: Children) => {
   return (
-    <div className="flex">
-      <nav className="border-r min-h-screen flex flex-col justify-between py-10 shadow-xl">
+    <div className="relative">
+      <nav className="hidden lg:flex w-[270px] z-[9999] fixed top-0 border-r min-h-screen  flex-col justify-between py-10 shadow-xl bg-white dark:bg-black">
         <div>
           <span className="text-4xl font-semibold font-rouge px-5">
             Instagram
@@ -40,7 +40,7 @@ const Sidebar = ({ children }: Children) => {
           </div>
         </div>
       </nav>
-      <main className="px-10">
+      <main>
         {children}
       </main>
     </div>
