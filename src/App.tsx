@@ -21,6 +21,14 @@ function App() {
         </div>
       ),
     },
+    {
+      path: "/notifications",
+      element: (
+        <div>
+          <Sidebar children={<div>Notifications</div>}/>
+        </div>
+      )
+    }
   ]);
 
   return (

@@ -90,7 +90,7 @@ export const posts = [
     img: "https://placehold.co/600x800",
     profile: "https://placehold.co/70x70",
     username: "Oindil",
-    likes: 100,
+    likes: 200,
     caption: "This is a caption",
   },
   {
@@ -98,7 +98,7 @@ export const posts = [
     img: "https://placehold.co/600x400",
     profile: "https://placehold.co/70x70",
     username: "Oindil",
-    likes: 100,
+    likes: 400,
     caption: "This is a caption",
   },
   {
@@ -106,7 +106,7 @@ export const posts = [
     img: "https://placehold.co/600x600",
     profile: "https://placehold.co/70x70",
     username: "Oindil",
-    likes: 100,
+    likes: 2,
     caption: "This is a caption",
   },
 ];

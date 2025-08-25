@@ -1,14 +1,15 @@
 import { posts } from "@/assets/data";
 import Stories from "./Stories";
 import PostCard from "./PostCard";
+import BottomBar from "./BottomBar";
 
 function Homepage() {
   return (
-    <div className="space-y-10 pb-20">
+    <div className="space-y-10 pb-20 relative">
       <div>
         <Stories />
       </div>
-      <section className="flex gap-10 flex-col items-center justify-center">
+      <section className="flex md:gap-10 flex-col items-center justify-center">
         {posts.map((post, index) => (
           <div key={index}>
             <PostCard
@@ -21,6 +22,9 @@ function Homepage() {
           </div>
         ))}
       </section>
+      <div className="md:block lg:hidden">
+        <BottomBar/>
+      </div>
     </div>
   );
 }
