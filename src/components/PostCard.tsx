@@ -18,8 +18,8 @@ function PostCard({ img, username, caption, likes, profile }: Props) {
   const [likesCount, setLikesCount] = useState(likes);
 
 
-  const handleUpdateLikes = (likes: number) => {
-    setLikesCount(++likes);
+  const handleUpdateLikes = () => {
+    setLikesCount((prevLikes) => prevLikes + 1);
   }
 
   return (
@@ -34,20 +34,20 @@ function PostCard({ img, username, caption, likes, profile }: Props) {
           </div>
         </CardHeader>
         <CardContent>
-          <img src={img} alt={caption} className="rounded-lg"/>
+          <img src={img} alt={caption} className="rounded-lg" />
         </CardContent>
         <CardFooter className="flex flex-col items-start gap-2">
           <div className="space-y-3">
             <div className="flex gap-4 items-center">
               <span onClick={() => setIsLiked(!isLiked)}>
-              {
-                isLiked ? 
-                <img src="/heart.png" className="size-7"/>
-                : <HeartIcon className="size-7" onClick={() => handleUpdateLikes(likes)}/> 
-              }
+                {
+                  isLiked ?
+                    <img src="/heart.png" className="size-7" />
+                    : <HeartIcon className="size-7" onClick={handleUpdateLikes} />
+                }
               </span>
-              <MessageCircleIcon className="size-7"/>
-              <Share2Icon className="size-7"/>
+              <MessageCircleIcon className="size-7" />
+              <Share2Icon className="size-7" />
             </div>
             <p className="font-semibold">{likesCount} likes</p>
           </div>

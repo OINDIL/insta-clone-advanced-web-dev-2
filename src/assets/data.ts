@@ -81,7 +81,19 @@ export const stories = [
     title: "Sabera",
     img: "https://placehold.co/70x70",
   },
-  
+  {
+    title: "Sabera",
+    img: "https://placehold.co/70x70",
+  },
+  {
+    title: "Sabera",
+    img: "https://placehold.co/70x70",
+  },
+  {
+    title: "Sabera",
+    img: "https://placehold.co/70x70",
+  },
+
 ];
 
 export const posts = [

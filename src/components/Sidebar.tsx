@@ -1,12 +1,9 @@
 import { navItems } from "@/assets/data";
 import { LogOut, Menu } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
-type Children = {
-  children: React.ReactNode;
-};
 
-const Sidebar = ({ children }: Children) => {
+const Sidebar = () => {
   return (
     <div className="relative">
       <nav className="hidden lg:flex w-[270px] z-[9999] fixed top-0 border-r min-h-screen  flex-col justify-between py-10 shadow-xl bg-white dark:bg-black">
@@ -41,7 +38,7 @@ const Sidebar = ({ children }: Children) => {
         </div>
       </nav>
       <main>
-        {children}
+        <Outlet />
       </main>
     </div>
   );

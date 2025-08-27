@@ -7,27 +7,29 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <div>
-          <Sidebar children={<Homepage />} />
-        </div>
-      ),
-    },
-    {
-      path: "/search",
-      element: (
-        <div>
-          <Sidebar children={<div>Search</div>} />
-        </div>
-      ),
-    },
-    {
-      path: "/notifications",
-      element: (
-        <div>
-          <Sidebar children={<div>Notifications</div>}/>
-        </div>
-      )
+      element: <Sidebar />,
+      children: [
+        {
+          path: "/",
+          element: <Homepage />
+        },
+        {
+          path: "/stories",
+          element: <Homepage />
+        },
+        {
+          path: "/search",
+          element: <Homepage />
+        },
+        {
+          path: "/explore",
+          element: <Homepage />
+        },
+        {
+          path: "/profile",
+          element: <Homepage />
+        }
+      ]
     }
   ]);
 
